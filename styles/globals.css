@@ -1,0 +1,208 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: "Oxanium-ExtraLight";
+  src: url('../public/assets/fonts/Oxanium/Oxanium-ExtraLight.ttf');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oxanium-Light";
+  src: url('../public/assets/fonts/Oxanium/Oxanium-Light.ttf');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oxanium-Regular";
+  src: url('../public/assets/fonts/Oxanium/Oxanium-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oxanium-Medium";
+  src: url('../public/assets/fonts/Oxanium/Oxanium-Medium.ttf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oxanium-SemiBold";
+  src: url('../public/assets/fonts/Oxanium/Oxanium-SemiBold.ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oxanium-Bold";
+  src: url('../public/assets/fonts/Oxanium/Oxanium-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oxanium-ExtraBold";
+  src: url('../public/assets/fonts/Oxanium/Oxanium-ExtraBold.ttf');
+  font-weight: 800;
+  font-style: normal;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  /* color: white; */
+}
+
+@layer base {
+  html {
+    @apply text-white;
+    @apply bg-black;
+  }
+}
+
+
+:root {
+  --Oxanium-ExtraLight: "Oxanium-ExtraLight";
+  --Oxanium-Light: "Oxanium-Light";
+  --Oxanium-Regular: "Oxanium-Regular";
+  --Oxanium-Medium: "Oxanium-Medium";
+  --Oxanium-SemiBold: "Oxanium-SemiBold";
+  --Oxanium-Bold: "Oxanium-Bold";
+  --Oxanium-ExtraBold: "Oxanium-ExtraBold";
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.tradingDigitsLogoSection {
+  width: 230px;
+}
+
+.activePage {
+  background-color: #27AE60;
+}
+
+.subscribe-button:hover {
+  background-color: white !important;
+  color: #27AE60;
+}
+
+.footer-links:hover {
+  color: #BDC3C7;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .tradingDigitsLogoSection {
+    width: 215px;
+  }
+
+  .percentagePara {
+    font-size: 8px !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .width-controller {
+    margin-left: 225px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .tradingDigitsLogoSection {
+    width: auto;
+  }
+
+  .percentagePara {
+    font-size: 8px !important;
+  }
+
+  .prePercentagePara {
+    font-size: 10px !important;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .prePercentagePara {
+    font-size: 9px !important;
+  }
+
+  .donateButton {
+    font-size: 10px !important;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    color: white;
+    background: black;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:ml-64 {
+    margin-left: 16rem;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .inputDiv {
+    width: 80px !important;
+  }
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+.custom-select .css-t3ipsp-control,
+.custom-select .css-13cymwt-control {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.custom-select .css-1dimb5e-singleValue {
+  color: white;
+}
+
+.custom-select .css-1u9des2-indicatorSeparator {
+  opacity: 0;
+}
+
+.custom-select-container {
+
+  padding: 0px 15px 0px 13px;
+}
+
+.border-gradient {
+  border: solid 3px transparent;
+  border-image-slice: 1;
+  border-width: 5px; 
+  border-radius: 100rem;
+}
+
+.border-gradient-purple {
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+}
+
+.border-gradient-none {
+  border: none !important;
+}
